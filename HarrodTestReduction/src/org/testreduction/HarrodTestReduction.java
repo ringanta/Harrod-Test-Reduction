@@ -41,7 +41,7 @@ public class HarrodTestReduction {
 		Set<String> essentialTests = input.getEssentialTests();
 		testsOutput.add(essentialTests);
 		stepsOutput.addStep("List of Test(R1): " + setToString(essentialTests));
-		Set<String> setR1 = input.getTests(1);
+		Set<String> setR1 = input.getEssentialReqs();
 		stepsOutput.addStep("List of R1: " + setToString(setR1));
 		stepsOutput.addStep("Selected test case is: " + setToString(essentialTests));
 	}

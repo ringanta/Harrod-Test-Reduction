@@ -15,10 +15,11 @@ public class HarrodStepsOutput {
 	
 	public void addStep(String desc){
 		StringBuffer buf = new StringBuffer();
-		
+	
 		number++;
 		buf.append("Step-").append(number).append(": ");
 		buf.append(desc);
+		lines.add(buf.toString());
 	}
 	
 	public String toString(){

@@ -44,6 +44,16 @@ public class MatrixInput {
 		return result;
 	}
 	
+	public Set<String> getEssentialReqs(){
+		Set<String> result = new HashSet<String>();
+		Set<String> reqs = bigR.getEssentialReqs();
+		
+		if (reqs != null){
+			result.addAll(reqs);
+		}
+		return result;
+	}
+	
 	public Set<String> getTests(int index){
 		Set<String> result = new HashSet<String>();
 		Set<String> reqs = getReqs(index);

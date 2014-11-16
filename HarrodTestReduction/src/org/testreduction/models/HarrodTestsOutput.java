@@ -18,7 +18,7 @@ public class HarrodTestsOutput {
 	}
 	
 	public void add(Set<String> tests){
-		tests.addAll(tests);
+		this.tests.addAll(tests);
 	}
 	
 	public Set<String> getTestsAsSet(){
